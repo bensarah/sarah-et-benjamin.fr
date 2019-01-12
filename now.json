@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "alias": ["sarah-et-benjamin.com", "www.sarah-et-benjamin.com"],
+  "builds": [{ "src": "package.json", "use": "@now/next" }]
+}
