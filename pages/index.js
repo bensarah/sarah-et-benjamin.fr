@@ -1,12 +1,15 @@
 import Page from '../layouts/main.js'
 import Logo from '../components/logo.js'
+import Date from '../components/date.js'
 
 export default () => (
   <Page>
     <div className="cover nous">
       <div className="w60 h60 mt12 ml12 relative logo"><Logo /> </div>
     </div>
-    <div className="cover mountain last" />
+    <div className="cover mountain last flex-parent flex-parent--center-main flex-parent--center-cross">
+      <Date/>
+    </div>
     <style jsx global>{`
       .cover {
         width: 94vw;
