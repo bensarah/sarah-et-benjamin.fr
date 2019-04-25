@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 const Main = ({ children }) => (
   <div className='full-height flex-parent flex-parent--column'>
-    { children }
     <Meta />
+    { children }
   </div>
 )
 
