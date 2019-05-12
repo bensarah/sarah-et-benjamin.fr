@@ -64,7 +64,9 @@ export default () => (
       Nous nous rendrons ensuite, en métro ou voiture, chez la tante de
       Benjamin, Claire, pour sabrer le champagne et bruncher ensemble.
     </Bloc>
-
+    <div className="flex-child--grow py36">
+      <img className="wmax360 block mx-auto" src="static/nous-mairie.jpg" />
+    </div>
     <div className="align-center dark-fuschia pt36 pb60">
       <div>
         <a
@@ -82,7 +84,10 @@ export default () => (
         20 juin 2020
       </span>
     </div>
-    <div className="align-center">✉️ Contact</div>
+
+    <a className="align-center" href="mailto:contact@escapades.voyage">
+      ✉️ Contact
+    </a>
     {/* Margin at the bottom */}
     <div className="h36" />
   </Page>
