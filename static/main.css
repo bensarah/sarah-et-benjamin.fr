@@ -1,3 +1,49 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Titles */
+h1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/* Other caracs */
+.big {
+  font-size: 50px;
+}
+
+.font-condensed {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.font-size36 {
+  font-size: 36px;
+}
+
+.font-weight200 {
+  font-weight: 200;
+}
+
+.bg-faintblue {
+  background-color: #f2f5fb;
+}
+
+/*  Colors  */
+.dark-blue {
+  color: #1e2f50;
+}
+
+.light-blue {
+  color: #3b7ebb;
 }
