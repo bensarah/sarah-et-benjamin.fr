@@ -35,9 +35,10 @@ export default () => (
     </div>
 
     {/* Timeline */}
-    <div className="align-center pt36 pb60">
-      <h1 className="big dark-blue inline-block">Mariage civil</h1>
-      <span className="big dark-blue ml24-ml font-weight200 inline-block">
+    <div className="align-center dark-fuschia pt36 pb60">
+      <h1 className="big inline-block">Mariage civil</h1>
+      <br className="none-ml" />
+      <span className="big ml24-ml font-weight200 inline-block">
         6 juillet 2019
       </span>
     </div>
@@ -64,7 +65,7 @@ export default () => (
       Benjamin, Claire, pour sabrer le champagne et bruncher ensemble.
     </Bloc>
 
-    <div className="align-center pt36 pb60">
+    <div className="align-center dark-fuschia pt36 pb60">
       <div>
         <a
           className="link txt-xl"
@@ -75,8 +76,9 @@ export default () => (
           À vos agendas !
         </a>
       </div>
-      <h1 className="big dark-blue inline-block">Réception</h1>
-      <span className="big dark-blue ml24-ml font-weight200 inline-block">
+      <h1 className="big inline-block">Réception</h1>
+      <br className="none-ml" />
+      <span className="big ml24-ml font-weight200 inline-block">
         20 juin 2020
       </span>
     </div>

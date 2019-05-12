@@ -1,7 +1,13 @@
 import Ligne9 from "./Ligne9.jsx";
 
 export default props => (
-  <div className="bg-faintblue flex-parent flex-parent--column flex-parent--row-ml v-full mb60 py18 px18">
+  <div
+    className="flex-parent flex-parent--column flex-parent--row-ml v-full mb60 py18 px18"
+    style={{
+      backgroundImage:
+        "linear-gradient(120deg, rgb(217, 229, 255), rgb(242, 245, 251), #fff4f8)"
+    }}
+  >
     <div
       className="flex-child w-full h240 w360-ml wmin360-ml h240-ml hmin240-ml"
       style={{
@@ -26,6 +32,7 @@ export default props => (
         >
           📍{props.location}{" "}
         </a>
+        <br className="none-mxl" />
         <Ligne9 />
         <span className="pl6">{props.station}</span>
       </div>
