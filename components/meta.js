@@ -18,7 +18,7 @@ class Meta extends Component {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="" />
         <meta property="og:description" content="Sarah & Benjamin - 💍" />
-
+        <title>Sarah & Benjamin</title>
         <link
           href="https://api.mapbox.com/mapbox-assembly/v0.23.1/assembly.min.css"
           rel="stylesheet"
