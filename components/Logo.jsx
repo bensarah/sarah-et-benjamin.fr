@@ -5,7 +5,7 @@ class Logo extends Component {
     return (
       <div className={this.props.className} style={this.props.style}>
         <svg
-          height="100%"
+          className="h-full w-auto"
           viewBox="0 0 273 332"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

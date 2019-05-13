@@ -1,9 +1,8 @@
 export default () => (
   <span className="inline-block w12 h12" style={{ verticalAlign: "center" }}>
     <svg
+      className="w-full h-auto"
       xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="auto"
       viewBox="0 0 1050 1050"
     >
       <circle fill="#D5C900" cx="500" cy="500" r="500" />
