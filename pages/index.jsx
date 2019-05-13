@@ -5,7 +5,7 @@ import Bloc from "../components/Bloc.jsx";
 
 export default () => (
   <Page>
-    <FramedImage src="static/nous.jpg" />
+    <FramedImage src="static/nous-yosemite.jpg" />
     <div className="absolute top left mt36 ml36 mt60-ml ml60-ml">
       <Logo
         stroke="#fff"
@@ -19,9 +19,8 @@ export default () => (
     <div className="px36 px60-ml pt12 pb24 txt-l">
       👋 Hello,
       <div className="py6">
-        Avant la grande cérémonie du 20 juin 2020, nous nous marions civilement{" "}
-        <span onMouseOver={() => console.log("coucou")}>ce 6 juillet 2019</span>
-        . On a hâte de vous avoir avec nous !
+        Avant la grande cérémonie du 20 juin 2020, nous nous marions civilement
+        ce 6 juillet 2019. On a hâte de vous avoir avec nous !
       </div>
       <div className="align-r">
         <Logo
