@@ -10,15 +10,18 @@ class Meta extends Component {
           content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
         />
         <meta name="theme-color" content="#081926" />
-        <meta name="description" content="Sarah & Benjamin" />
+        <meta name="description" content="Notre site de mariage" />
+        <title>Sarah & Benjamin</title>
 
         <meta property="og:site_name" content="Sarah & Benjamin" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:url" content="https://sarah-et-benjamin.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="" />
-        <meta property="og:description" content="Sarah & Benjamin - 💍" />
-        <title>Sarah & Benjamin</title>
+        <meta
+          property="og:image"
+          content="https://sarah-et-benjamin.com/static/nous-yosemite.jpg"
+        />
+        <meta property="og:description" content="Notre site de mariage" />
         <link
           href="https://api.mapbox.com/mapbox-assembly/v0.23.1/assembly.min.css"
           rel="stylesheet"
