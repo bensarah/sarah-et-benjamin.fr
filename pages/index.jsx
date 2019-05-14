@@ -20,7 +20,7 @@ export default () => (
       👋 Hello,
       <div className="py6">
         Avant la grande cérémonie du 20 juin 2020, nous nous marions civilement
-        ce 6 juillet 2019. On a hâte de vous avoir avec nous !
+        ce 6 juillet 2019. On a hâte de partager ce moment avec vous !
       </div>
       <div className="align-r">
         <Logo
@@ -45,7 +45,7 @@ export default () => (
       img="static/mairie.png"
       mapsLink="https://goo.gl/maps/Dv8acD6eAs6AAVv67"
       title="Mairie"
-      time="10h30"
+      time="10h15"
       location="Mairie du 11ème arrondissement de Paris"
       station="Voltaire"
     >
@@ -60,8 +60,16 @@ export default () => (
       location="108 boulevard Suchet, Paris 16ème"
       station="Jasmin"
     >
-      Nous nous rendrons ensuite, en métro ou voiture, chez la tante de
-      Benjamin, Claire, pour sabrer le champagne et bruncher ensemble.
+      Nous nous rendrons ensuite, en{" "}
+      <a href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e3">
+        métro
+      </a>{" "}
+      ou{" "}
+      <a href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e0">
+        voiture
+      </a>
+      , chez la tante de Benjamin, Claire, pour sabrer le champagne et bruncher
+      ensemble.
     </Bloc>
     <div className="flex-child--grow py36">
       <img className="wmax360 block mx-auto" src="static/nous-mairie.jpg" />
@@ -70,7 +78,7 @@ export default () => (
       <div>
         <a
           className="link txt-xl"
-          href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnM2NGp1ZTJ0YzFzZjB1bmY3bXBhYmF0ZDYgYmVuamFtaW4udGRtQG0&tmsrc=benjamin.tdm%40gmail.com"
+          href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW1saXE4aGhyZ29ucnY2cHVmYmUzcGRpMW4gZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -84,7 +92,7 @@ export default () => (
       </span>
     </div>
 
-    <a className="align-center" href="mailto:contact@escapades.voyage">
+    <a className="align-center" href="mailto:nous@sarah-et-benjamin.com">
       ✉️ Contact
     </a>
     {/* Margin at the bottom */}
