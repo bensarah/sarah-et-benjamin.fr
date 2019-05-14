@@ -1,4 +1,5 @@
 import Ligne9 from "./Ligne9.jsx";
+import A from "./ExternalLink";
 
 export default props => (
   <div
@@ -9,7 +10,7 @@ export default props => (
     }}
   >
     <div
-      className="flex-child w-full h240 w360-ml wmin360-ml h240-ml hmin240-ml"
+      className="flex-child w-full h240 w360-ml wmin360-ml h240-ml hmin240-ml shadow-darken10"
       style={{
         backgroundImage: `url("${props.img}")`,
         backgroundRepeat: "no-repeat",
@@ -24,15 +25,8 @@ export default props => (
         {props.time}
       </span>
       <div className="pb18">
-        <a
-          className="link pr6"
-          href={props.mapsLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📍{props.location}{" "}
-        </a>
-        <br className="none-mxl" />
+        <A href={props.mapsLink}>📍{props.location} </A>
+        <br className="pl6 none-mxl" />
         <Ligne9 />
         <span className="pl6">{props.station}</span>
       </div>
