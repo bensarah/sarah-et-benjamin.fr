@@ -2,6 +2,7 @@ import Page from "../layouts/main.js";
 import FramedImage from "../components/FramedImage.jsx";
 import Logo from "../components/Logo.jsx";
 import Bloc from "../components/Bloc.jsx";
+import A from "../components/ExternalLink";
 
 export default () => (
   <Page>
@@ -61,13 +62,13 @@ export default () => (
       station="Jasmin"
     >
       Nous nous rendrons ensuite, en{" "}
-      <a href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e3">
+      <A href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e3">
         métro
-      </a>{" "}
+      </A>{" "}
       ou{" "}
-      <a href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e0">
+      <A href="https://www.google.com/maps/dir/Mairie+du+11e+arrondissement,+Place+L%C3%A9on+Blum,+Paris/108+Boulevard+Suchet,+75016+Paris/@48.8441324,2.299006,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47e66df79e6fe907:0xfea43ce9b2e034ac!2m2!1d2.379506!2d48.8588238!1m5!1m1!1s0x47e67ab147654a6d:0x3792e1ba5fb634d6!2m2!1d2.2608092!2d48.8516986!3e0">
         voiture
-      </a>
+      </A>
       , chez la tante de Benjamin, Claire, pour sabrer le champagne et bruncher
       ensemble.
     </Bloc>
