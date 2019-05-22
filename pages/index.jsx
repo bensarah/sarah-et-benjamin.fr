@@ -73,7 +73,11 @@ export default () => (
       ensemble.
     </Bloc>
     <div className="flex-child--grow py36">
-      <img className="wmax360 block mx-auto" src="static/nous-mairie.jpg" />
+      <img
+        className="wmax360 block mx-auto"
+        src="static/nous-mairie.jpg"
+        alt="dépôt du dossier à la mairie"
+      />
     </div>
     <div className="align-center dark-fuschia pt36 pb60">
       <div>
