@@ -16,6 +16,7 @@ class Meta extends Component {
         <meta property="og:site_name" content="Sarah & Benjamin" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:url" content="https://sarah-et-benjamin.com" />
+        <meta property="og:title" content="6 juillet 2019" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
