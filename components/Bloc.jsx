@@ -1,4 +1,3 @@
-import Ligne9 from "./Ligne9.jsx";
 import A from "./ExternalLink";
 
 export default props => (
@@ -27,8 +26,6 @@ export default props => (
       <div className="pb18">
         <A href={props.mapsLink}>📍{props.location} </A>
         <br className="pl6 none-mxl" />
-        <Ligne9 />
-        <span className="pl6">{props.station}</span>
       </div>
       <p>{props.children}</p>
     </div>
