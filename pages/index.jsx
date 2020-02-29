@@ -2,7 +2,6 @@ import Page from "../layouts/main.js";
 import FramedImage from "../components/FramedImage.jsx";
 import Logo from "../components/Logo.jsx";
 import Bloc from "../components/Bloc.jsx";
-import A from "../components/ExternalLink";
 
 export default () => (
   <Page>
