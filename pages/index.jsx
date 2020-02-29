@@ -53,7 +53,7 @@ export default () => (
       img="static/petit-valot-salle.jpg"
       mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
       title="Cocktail et dîner"
-      time="17h"
+      time="17h30"
       location="Le Petit Valot"
     >
       Nous nous rendrons ensuite au Petit Valot pour le cocktail, dîner, et
@@ -73,8 +73,8 @@ export default () => (
     <div className="align-center dark-fuschia py36">
       <h1 className="big inline-block">Transports</h1>
     </div>
-    <div className="mx-auto" style={{ maxWidth: "64rem" }}>
-      <p className="px36 py12">
+    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
+      <p className="py12">
         Vous serez nombreux à venir en voiture depuis Paris et ses environs.
         Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
         vous pouvez partager vos coordonnées sur{" "}
@@ -86,7 +86,7 @@ export default () => (
         </a>
         . Il y a aussi un TER partant de Paris Bercy vers Gien.
       </p>
-      <p className="px36 py12">
+      <p className="py12">
         Le samedi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
@@ -96,7 +96,7 @@ export default () => (
     <div className="align-center dark-fuschia py36">
       <h1 className="big inline-block">Où dormir ?</h1>
     </div>
-    <div className="mx-auto" style={{ maxWidth: "64rem" }}>
+    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
       <p>
         Voici une liste de quelques hôtels aux alentours du lieu de réception:
       </p>
@@ -139,19 +139,29 @@ export default () => (
     <div className="align-center dark-fuschia py36">
       <h1 className="big inline-block">D'autres questions ?</h1>
     </div>
-    <div className="mx-auto" style={{ maxWidth: "64rem" }}>
-      <p className="txt-bold pb12">Puis-je venir avec mes enfants ?</p>
+    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
+      <p className="txt-bold pb12">
+        Y aura-t-il des babysitters pour les enfants ?
+      </p>
       <p className="pb36">
         Nous prévoyons une salle et des babysitters pour les enfants.
         Prévenez-nous pour que nous puissions prévoir combien ils seront !
       </p>
-      <p className="txt-bold pb12">Puis-je venir avec mes enfants ?</p>
-      <p className="pb36">
-        Nous prévoyons une salle et des babysitters pour les enfants.
-        Prévenez-nous pour que nous puissions prévoir combien ils seront !
+
+      <p className="txt-bold pb12">
+        Quand vous dire que nous serons présents ?
       </p>
-      <p className="py36">
-        // QA section: enfants, baby sitter, date du rsvp , nos numéros de tel
+      <p className="pb36">
+        Vous serez des nôtres ? Bonne nouvelle ! Votre réponse est souhaitée
+        avant le 20 avril 2020.
+      </p>
+      <p className="txt-bold pb12">Comment vous contacter ?</p>
+      <p className="pb36">
+        Écrivez-nous des mots doux ;)
+        <ul className="txt-ul py12">
+          <li className="txt-li">Sarah: 0768762623</li>
+          <li className="txt-li">Benjamin: 0767230974</li>
+        </ul>
       </p>
     </div>
 
@@ -160,32 +170,28 @@ export default () => (
       <h1 className="big inline-block">La liste</h1>
     </div>
     <p className="px36">
-      Voici notre liste de mariage sur millemercis: // TODO
+      Votre présence seule nous comble, mais si vous avez envie de participer à
+      notre voyage de noces, nous aurons bientôt un lien vers notre cagnotte.
     </p>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
+      <div className="align-center dark-fuschia pt36 pb60">
+        <div>
+          <a
+            className="link txt-xl"
+            href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW1saXE4aGhyZ29ucnY2cHVmYmUzcGRpMW4gZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            À vos agendas !
+          </a>
+        </div>
+      </div>
       <img
         className="wmax360 block mx-auto"
-        src="static/nous-mairie.jpg"
-        alt="dépôt du dossier à la mairie"
+        src="static/nous-6-juil.jpg"
+        alt="Oui on se marie pour la deuxième fois, et alors ?"
       />
-    </div>
-    <div className="align-center dark-fuschia pt36 pb60">
-      <div>
-        <a
-          className="link txt-xl"
-          href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW1saXE4aGhyZ29ucnY2cHVmYmUzcGRpMW4gZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          À vos agendas !
-        </a>
-      </div>
-      <h1 className="big inline-block">Réception</h1>
-      <br className="none-ml" />
-      <span className="big ml24-ml font-weight200 inline-block">
-        20 juin 2020
-      </span>
     </div>
     <a className="align-center" href="mailto:nous@bensarah.fr">
       ✉️ Contact
