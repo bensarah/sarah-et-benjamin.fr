@@ -5,26 +5,38 @@ body {
 
 /* Titles */
 h1 {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Dancing Script", sans-serif;
   font-size: 36px;
   font-weight: 600;
   line-height: 1.5em;
 }
 
 h2 {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Dancing Script", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5em;
 }
 
 /* Other caracs */
+.vw80 {
+  width: 80vw;
+}
+
+.vw20 {
+  width: 20vw;
+}
+
 .big {
   font-size: 50px;
 }
 
 .font-condensed {
   font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.font-script {
+  font-family: "Dancing Script", serif;
 }
 
 .font-size36 {
@@ -44,8 +56,8 @@ h2 {
   color: #1e2f50;
 }
 
-.dark-fuschia {
-  color: #b7044a;
+.dark-green {
+  color: #3b5e46;
 }
 
 .light-blue {

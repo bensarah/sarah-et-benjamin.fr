@@ -30,9 +30,10 @@ class Meta extends Component {
 
         <link rel="icon" href="/static/favicon.png" />
         <link
-          href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400|Fira+Sans+Condensed:200,400,600"
+          href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400|Fira+Sans+Condensed:200,400,600|Dancing+Script"
           rel="stylesheet"
         />
+        <link href="/static/bhavuka.ttf" rel="stylesheet" />
         <link href="/static/main.css" rel="stylesheet" />
 
         <script
