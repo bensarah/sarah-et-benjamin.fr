@@ -6,9 +6,9 @@ import A from "../components/ExternalLink";
 
 export default () => (
   <Page>
-    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml viewport-full-ml">
+    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml viewport-almost-ml">
       {/* Image */}
-      <div className="relative flex-child align-right flex-child--grow viewport-full">
+      <div className="relative flex-child align-right flex-child--grow viewport-almost">
         <FramedImage src="static/nous-yosemite.jpg" />
         <div className="absolute top left py12 px12">
           <Logo
