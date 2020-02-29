@@ -25,7 +25,7 @@ export default () => (
           background: "url(/static/eucalyptus.jpg) no-repeat center center",
           backgroundSize: "cover"
         }}
-        className="flex-child w360-ml hmin180 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
+        className="dark-blue flex-child w360-ml hmin180 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <h1>Sarah & Benjamin</h1>
         <span className="txt-h2 ml24-ml font-weight200 inline-block">
@@ -34,7 +34,7 @@ export default () => (
       </div>
     </div>
     {/* Timeline */}
-    <div className="align-center dark-fuschia pt36 pb60">
+    <div className="align-center dark-green pt36 pb60">
       <h1 className="big inline-block pt36">Le programme</h1>
       <br className="none-ml" />
       <span className="big ml24-ml font-weight200 inline-block">20 juin</span>
@@ -63,17 +63,17 @@ export default () => (
     <Bloc
       img="static/petit-valot.jpg"
       mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
-      title="Brunch"
+      title="Brunch du dimanche"
       time="13h"
       location="Le Petit Valot"
     >
       Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de bain !
     </Bloc>
     {/* Comment s'y rendre */}
-    <div className="align-center dark-fuschia py36">
+    <div className="align-center dark-green py36">
       <h1 className="big inline-block">Transports</h1>
     </div>
-    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
+    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py12">
         Vous serez nombreux à venir en voiture depuis Paris et ses environs.
         Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
@@ -84,7 +84,14 @@ export default () => (
         >
           ce document
         </a>
-        . Il y a aussi un TER partant de Paris Bercy vers Gien.
+        . Il y a aussi un{" "}
+        <a
+          className="link"
+          href="https://www.oui.sncf/train/horaires/paris/gien"
+        >
+          TER
+        </a>{" "}
+        partant de Paris Bercy vers Gien.
       </p>
       <p className="py12">
         Le samedi soir, nous mettrons des taxis à votre disposition pour vous
@@ -93,10 +100,10 @@ export default () => (
     </div>
 
     {/* Logement */}
-    <div className="align-center dark-fuschia py36">
+    <div className="align-center dark-green py36">
       <h1 className="big inline-block">Où dormir ?</h1>
     </div>
-    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
+    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p>
         Voici une liste de quelques hôtels aux alentours du lieu de réception:
       </p>
@@ -132,14 +139,44 @@ export default () => (
           , le bon plan
         </li>
       </ul>
-      <p>Le Petit Valot n'autorise malheureusement pas les tentes.</p>
+      <p>
+        Le Petit Valot n'autorise malheureusement pas les tentes. Contactez-nous
+        si vous voulez nos conseils pour choisir un hébergement !
+      </p>
+    </div>
+
+    {/* Logement */}
+    <div className="align-center dark-green py36">
+      <h1 className="big inline-block">Que faire dans la région ?</h1>
+    </div>
+    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
+      <p className="py12">
+        <strong>Les bords de Loire</strong> à Gien sont très agréables en été.
+        Les alentours du château offrent une belle vue sur le fleuve. Si vous
+        avez un peu de temps, la ville est à moins d'une heure en voiture de{" "}
+        <strong>Sancerre</strong>, dont le vignoble est réputé.
+      </p>
+      <p className="py12">
+        Il y aurait des amateurs de ponts parmi nos invités, qui seront étonnés
+        d'apprendre qu'on trouve à <strong>Briare</strong> le plus long
+        pont-canal métallique du monde !
+      </p>
+      <img
+        className="h240 center mx-auto block "
+        draggable={false}
+        src="/static/pont-canal.jpg"
+      />
+      <p className="py12">
+        La belle centrale de <strong>Dampierre</strong> se visite quant à elle
+        tous les jours de semaine à 15h.
+      </p>
     </div>
 
     {/* QA */}
-    <div className="align-center dark-fuschia py36">
+    <div className="align-center dark-green py36">
       <h1 className="big inline-block">D'autres questions ?</h1>
     </div>
-    <div className="mx-auto px36" style={{ maxWidth: "64rem" }}>
+    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="txt-bold pb12">
         Y aura-t-il des babysitters pour les enfants ?
       </p>
@@ -159,23 +196,30 @@ export default () => (
       <p className="pb36">
         Écrivez-nous des mots doux ;)
         <ul className="txt-ul py12">
-          <li className="txt-li">Sarah: 0768762623</li>
-          <li className="txt-li">Benjamin: 0767230974</li>
+          <li className="txt-li">
+            <strong>S</strong>: 0768762623, sarah@bensarah.fr
+          </li>
+          <li className="txt-li">
+            <strong>B</strong>: 0767230974, ben@bensarah.fr
+          </li>
         </ul>
       </p>
     </div>
 
     {/* Liste */}
-    <div className="align-center dark-fuschia py36">
+    <div className="align-center dark-green py36">
       <h1 className="big inline-block">La liste</h1>
     </div>
-    <p className="px36">
-      Votre présence seule nous comble, mais si vous avez envie de participer à
-      notre voyage de noces, nous aurons bientôt un lien vers notre cagnotte.
-    </p>
+    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
+      <p className="py36">
+        Votre présence seule nous comble, mais si vous avez envie de participer
+        à notre voyage de noces, nous aurons bientôt un lien vers notre
+        cagnotte.
+      </p>
+    </div>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
-      <div className="align-center dark-fuschia pt36 pb60">
+      <div className="align-center dark-green pt36 pb60">
         <div>
           <a
             className="link txt-xl"
