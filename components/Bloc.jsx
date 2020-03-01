@@ -1,7 +1,7 @@
 import A from "./ExternalLink";
 
 export default props => (
-  <div className="topo flex-parent flex-parent--column flex-parent--row-ml v-full mb60 py18 px36-ml px18">
+  <div className="topo flex-parent flex-parent--column flex-parent--row-ml v-full mb60 py18 pl120-ml px18">
     <div
       className="flex-child w-full h240 w360-ml wmin360-ml h240-ml hmin240-ml shadow-darken10"
       style={{
