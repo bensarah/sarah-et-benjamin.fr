@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+
 import Page from "../layouts/main.js";
 import FramedImage from "../components/FramedImage.jsx";
 import Logo from "../components/Logo.jsx";
@@ -5,7 +7,7 @@ import Bloc from "../components/Bloc.jsx";
 
 export default () => (
   <Page>
-    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml viewport-almost-ml">
+    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml">
       {/* Image */}
       <div className="relative flex-child align-right flex-child--grow viewport-almost">
         <FramedImage src="static/nous-yosemite.jpg" />
@@ -21,19 +23,44 @@ export default () => (
       {/* white Left space only for large screens */}
       <div
         style={{
-          background: "url(/static/eucalyptus.jpg) no-repeat center center",
-          backgroundSize: "cover"
+          background: "url(/static/frame-bottom.png) no-repeat bottom center",
+          backgroundSize: "contain"
         }}
-        className="dark-blue flex-child w360-ml hmin180 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
+        className="relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
+        <div
+          style={{
+            background: "url(/static/frame-top.png) no-repeat top center",
+            backgroundSize: "contain"
+          }}
+          className="absolute w-full h-full top-0"
+        />
         <h1>Sarah & Benjamin</h1>
         <span className="txt-h2 ml24-ml font-weight200 inline-block">
-          20 juin 2020 à Gien
+          20 juin 2020
         </span>
       </div>
     </div>
+    {/* Intro */}
+    <div
+      className="mx-auto px36 flex-parent flex-parent--space-between-main flex-parent--center-cross items-center"
+      style={{ width: "min(64rem, 90%)" }}
+    >
+      <div style={{ height: "min-content" }}>
+        <p className="pb12">
+          Après bientôt 7 ans et une trentaine de sommets, nous avons décidé de
+          nous marier&nbsp;!
+        </p>
+        <p className="pb12">
+          Rendez-vous pour le solstice à{" "}
+          <span className="dancing-script dark-blue txt-h3">Gien</span>, dans le
+          Loiret . Hâte de vous y retrouver&nbsp;!
+        </p>
+      </div>
+      <img className="right w120" src="/static/loiret.png"></img>
+    </div>
     {/* Timeline */}
-    <div className="align-center dark-green pt36 pb60">
+    <div className="align-center medium-blue pt60 pb60">
       <h1 className="big inline-block pt36">Le programme</h1>
       <br className="none-ml" />
       <span className="big ml24-ml font-weight200 inline-block">20 juin</span>
@@ -69,8 +96,8 @@ export default () => (
       Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de bain !
     </Bloc>
     {/* Comment s'y rendre */}
-    <div className="align-center dark-green py36">
-      <h1 className="big inline-block">Transports</h1>
+    <div className="align-center medium-blue py36">
+      <h1 className="big inline-block">Comment s'y rendre ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py12">
@@ -96,10 +123,12 @@ export default () => (
         Le samedi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
+
+      <img src="/static/map.png" className="w600 center mx-auto block" />
     </div>
 
     {/* Logement */}
-    <div className="align-center dark-green py36">
+    <div className="align-center medium-blue py36">
       <h1 className="big inline-block">Où dormir ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
@@ -145,7 +174,7 @@ export default () => (
     </div>
 
     {/* Logement */}
-    <div className="align-center dark-green py36">
+    <div className="align-center medium-blue py36">
       <h1 className="big inline-block">Que faire dans la région ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
@@ -172,7 +201,7 @@ export default () => (
     </div>
 
     {/* QA */}
-    <div className="align-center dark-green py36">
+    <div className="align-center medium-blue py36">
       <h1 className="big inline-block">D'autres questions ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
@@ -206,7 +235,7 @@ export default () => (
     </div>
 
     {/* Liste */}
-    <div className="align-center dark-green py36">
+    <div className="align-center medium-blue py36">
       <h1 className="big inline-block">La liste</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
@@ -218,7 +247,7 @@ export default () => (
     </div>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
-      <div className="align-center dark-green pt36 pb60">
+      <div className="align-center medium-blue pt36 pb60">
         <div>
           <a
             className="link txt-xl"
