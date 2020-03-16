@@ -9,7 +9,7 @@ export default () => (
   <Page>
     <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36-ml py36-ml grid-ml">
       {/* Image */}
-      <div className="relative flex-child align-right flex-child--grow viewport-almost px36 py36 px0-ml py0-ml">
+      <div className="relative flex-child align-right flex-child--grow viewport-almost-ml viewport-full px36 py36 px0-ml py0-ml">
         <FramedImage src="static/nous-yosemite.jpg" />
         <div className="absolute top left py12-ml px12-ml px60 py60">
           <Logo
@@ -41,7 +41,7 @@ export default () => (
     {/* Intro */}
     <div
       className="mx-auto px36 flex-parent flex-parent--space-between-main flex-parent--center-cross items-center"
-      style={{ width: "min(64rem, 90%)" }}
+      style={{ width: "min(64rem, 100%)" }}
     >
       <div style={{ height: "min-content" }}>
         <p className="pb12">
@@ -127,14 +127,18 @@ export default () => (
         arriver pendant la cérémonie).
       </p>
       <p className="py12">
-        🚴🏻‍♀️ Les plus chevronnés peuvent également venir en vélo
+        🚴🏻‍♀️ Les plus chevronnés peuvent également venir en vélo.
       </p>
       <p className="py12">
         🚕 Le samedi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
 
-      <img src="/static/map.png" className="w600 center mx-auto block" />
+      <img
+        src="/static/map.png"
+        style={{ width: 500, maxWidth: "80%" }}
+        className="center mx-auto block pt24"
+      />
     </div>
 
     {/* Logement */}
@@ -199,11 +203,11 @@ export default () => (
     </div>
 
     {/* Logement */}
-    <div className="align-center medium-blue py36">
+    <div className="align-center medium-blue pt60 pb36">
       <h1 className="big inline-block">Que faire dans la région ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
-      <p className="py12">
+      <p className="pb12">
         <strong>Les bords de Loire</strong> à Gien sont très agréables en été.
         Les alentours du château offrent une belle vue sur le fleuve. Si vous
         avez un peu de temps, la ville est à moins d'une heure en voiture de{" "}
@@ -226,7 +230,7 @@ export default () => (
     </div>
 
     {/* QA */}
-    <div className="align-center medium-blue py36">
+    <div className="align-center medium-blue pt60 pb36">
       <h1 className="big inline-block">D'autres questions&nbsp;?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
