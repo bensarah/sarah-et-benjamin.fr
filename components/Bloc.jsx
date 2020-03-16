@@ -13,8 +13,8 @@ export default props => (
       }}
     />
     <div className="flex-child pt18 pb36 px36 flex-child--grow">
-      <h1 className="dark-blue inline-block">{props.title}</h1>
-      <span className="inline-block pl24 font-condensed font-weight200 font-size36">
+      <h1 className="dark-blue inline-block font-bold-caps">{props.title}</h1>
+      <span className="dark-blue inline-block pl24 font-light font-weight200 font-size30">
         {props.time}
       </span>
       <div className="pb18">

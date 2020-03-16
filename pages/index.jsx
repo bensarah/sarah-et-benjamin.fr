@@ -7,11 +7,11 @@ import Bloc from "../components/Bloc.jsx";
 
 export default () => (
   <Page>
-    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml">
+    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36-ml py36-ml grid-ml">
       {/* Image */}
-      <div className="relative flex-child align-right flex-child--grow viewport-almost">
+      <div className="relative flex-child align-right flex-child--grow viewport-almost px36 py36 px0-ml py0-ml">
         <FramedImage src="static/nous-yosemite.jpg" />
-        <div className="absolute top left py12 px12">
+        <div className="absolute top left py12-ml px12-ml px60 py60">
           <Logo
             stroke="#fff"
             fill="none"
@@ -20,13 +20,12 @@ export default () => (
           />
         </div>
       </div>
-      {/* white Left space only for large screens */}
       <div
         style={{
           background: "url(/static/frame.png) no-repeat bottom center",
           backgroundSize: "contain"
         }}
-        className="relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
+        className="my36 my0-ml relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <div
           style={{
@@ -35,8 +34,8 @@ export default () => (
           }}
           className="absolute w-full h-full top-0"
         />
-        <h1>Sarah et Benjamin</h1>
-        <p className="pt24 txt-h2 font-weight300 inline-block">20 juin 2020</p>
+        <h1 className="dancing-script txt-h1">Sarah et Benjamin</h1>
+        <p className="pt24 txt-h2 font-light inline-block">20 juin 2020</p>
       </div>
     </div>
     {/* Intro */}
@@ -70,8 +69,8 @@ export default () => (
       time="15h"
       location="Église de Gien"
     >
-      Rejoignons-nous pour la célébration qui aura lieu en l'église de Gien
-      (Loiret) à 15h.
+      Rejoignons-nous pour la célébration qui aura lieu en l'église
+      Sainte-Jeanne-d'Arc de Gien à 15h.
     </Bloc>
     <Bloc
       img="static/petit-valot-salle.jpg"
@@ -314,12 +313,12 @@ export default () => (
     <div className="h36" />
     <div className="relative">
       <div className="absolute bottom align-center w-full my36">
-        <div>
+        <div className="mb12">
           <a className="align-center" href="mailto:nous@bensarah.fr">
             ✉️ Contact
           </a>
         </div>
-        Made with love in confinement · © 2020
+        <span className="txt-m">Made with love in confinement · © 2020</span>
       </div>
       <img src="/static/footer.png" className="w-full mb60 mb0-ml" />
     </div>

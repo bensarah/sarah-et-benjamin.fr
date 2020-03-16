@@ -5,15 +5,15 @@ body {
 
 /* Titles */
 h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 36px;
+  font-family: "Intro Bold", sans-serif;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.5em;
 }
 
 h2 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 24px;
+  font-family: "Intro Bold", sans-serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
 }
@@ -28,19 +28,23 @@ h2 {
 }
 
 .big {
-  font-size: 50px;
+  font-size: 38px;
 }
 
-.font-condensed {
-  font-family: "Fira Sans Condensed", sans-serif;
+.font-light {
+  font-family: "Intro Light", sans-serif;
+}
+
+.font-bold-caps {
+  font-family: "Intro Bold", sans-serif;
 }
 
 .font-script {
   font-family: "Dancing Script", serif;
 }
 
-.font-size36 {
-  font-size: 36px;
+.font-size30 {
+  font-size: 30px;
 }
 
 .font-weight200 {
@@ -80,11 +84,15 @@ h2 {
 
 @font-face {
   font-family: "Intro";
-  src: url("/static/fonts/Intro\ Thin\ Regular.otf");
-  font-weight: thin;
+  src: url("/static/fonts/Intro\ Book\ Regular.otf");
 }
 
 @font-face {
-  font-family: "Intro";
-  src: url("/static/fonts/Intro\ Book\ Regular.otf");
+  font-family: "Intro Light";
+  src: url("/static/fonts/Intro\ Light\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Intro Bold";
+  src: url("/static/fonts/Intro\ Bold\ Regular.otf");
 }
