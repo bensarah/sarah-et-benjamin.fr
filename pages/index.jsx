@@ -108,6 +108,8 @@ export default () => (
         <a
           className="color-blue link"
           href="https://docs.google.com/spreadsheets/d/1xYlzqVCH16RgttLSRD5BR90mg7lzV3hQADQPSHvKcxw/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           ce document
         </a>
@@ -115,10 +117,13 @@ export default () => (
         <a
           className="link"
           href="https://www.oui.sncf/train/horaires/paris/gien"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           TER
         </a>{" "}
-        partant de Paris Bercy vers Gien.
+        partant à 09h09 de Paris Bercy vers Gien (le prochain à 14h11 fait
+        arriver pendant la cérémonie).
       </p>
       <p className="py12">
         Le samedi soir, nous mettrons des taxis à votre disposition pour vous
@@ -139,7 +144,12 @@ export default () => (
       </p>
       <ul className="txt-ul py12">
         <li className="txt-li">
-          <a className="color-blue link" href="https://hoteldurivage.com/">
+          <a
+            className="color-blue link"
+            href="https://hoteldurivage.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Hôtel du Rivage
           </a>
           , hôtel mignon en bord de Loire
@@ -148,13 +158,20 @@ export default () => (
           <a
             className="color-blue link"
             href="https://www.domainedesroches-briare.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Domaine des Roches
           </a>
           , hôtel de charme avec piscine à 20 minutes de la salle
         </li>
         <li className="txt-li">
-          <a className="color-blue link" href="http://www.sanotel-gien.fr/">
+          <a
+            className="color-blue link"
+            href="http://www.sanotel-gien.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Sanotel
           </a>
           , l'option la plus proche, deux étoiles
@@ -163,6 +180,8 @@ export default () => (
           <a
             className="color-blue link"
             href="https://all.accor.com/hotel/9344/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Ibis Gien
           </a>
@@ -242,10 +261,24 @@ export default () => (
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py36">
-        Votre présence seule nous comble, mais si vous avez envie de participer
-        à notre voyage de noces, nous aurons bientôt un lien vers notre
-        cagnotte.
+        Votre présence seule nous comble, mais si vous voulez participer à notre
+        voyage de noces, voici&nbsp;
+        <a
+          className="color-blue link"
+          href="https://paypal.me/pools/c/8nltiMrrDm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          un lien vers une cagnotte Paypal
+        </a>
+        . Nous aimerions aller faire de la randonnée dans le Tian Shan, en Asie
+        Centrale.
       </p>
+      <img
+        className="wmax360 block mx-auto"
+        src="static/tian-shan.jpg"
+        alt="Voyage de noces en Asie Centrale, si on a le droit de voyager 🤞"
+      />
     </div>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
