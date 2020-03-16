@@ -7,11 +7,11 @@ import Bloc from "../components/Bloc.jsx";
 
 export default () => (
   <Page>
-    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36 py36 grid-ml">
+    <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36-ml py36-ml grid-ml">
       {/* Image */}
-      <div className="relative flex-child align-right flex-child--grow viewport-almost">
+      <div className="relative flex-child align-right flex-child--grow viewport-almost-ml viewport-full px36 py36 px0-ml py0-ml">
         <FramedImage src="static/nous-yosemite.jpg" />
-        <div className="absolute top left py12 px12">
+        <div className="absolute top left py12-ml px12-ml px60 py60">
           <Logo
             stroke="#fff"
             fill="none"
@@ -20,31 +20,28 @@ export default () => (
           />
         </div>
       </div>
-      {/* white Left space only for large screens */}
       <div
         style={{
-          background: "url(/static/frame-bottom.png) no-repeat bottom center",
+          background: "url(/static/frame.png) no-repeat bottom center",
           backgroundSize: "contain"
         }}
-        className="relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
+        className="my36 my0-ml relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <div
           style={{
-            background: "url(/static/frame-top.png) no-repeat top center",
+            background: "url(/static/frame-top2.png) no-repeat top center",
             backgroundSize: "contain"
           }}
           className="absolute w-full h-full top-0"
         />
-        <h1>Sarah & Benjamin</h1>
-        <span className="txt-h2 ml24-ml font-weight200 inline-block">
-          20 juin 2020
-        </span>
+        <h1 className="dancing-script txt-h1">Sarah et Benjamin</h1>
+        <p className="pt24 txt-h2 font-light inline-block">20 juin 2020</p>
       </div>
     </div>
     {/* Intro */}
     <div
       className="mx-auto px36 flex-parent flex-parent--space-between-main flex-parent--center-cross items-center"
-      style={{ width: "min(64rem, 90%)" }}
+      style={{ width: "min(64rem, 100%)" }}
     >
       <div style={{ height: "min-content" }}>
         <p className="pb12">
@@ -53,8 +50,8 @@ export default () => (
         </p>
         <p className="pb12">
           Rendez-vous pour le solstice à{" "}
-          <span className="dancing-script dark-blue txt-h3">Gien</span>, dans le
-          Loiret . Hâte de vous y retrouver&nbsp;!
+          <span className="txt-bold dark-blue">Gien</span>, dans le Loiret. Hâte
+          de vous y retrouver 😘
         </p>
       </div>
       <img className="right w120" src="/static/loiret.png"></img>
@@ -72,8 +69,8 @@ export default () => (
       time="15h"
       location="Église de Gien"
     >
-      Rejoignons-nous pour la célébration qui aura lieu en l'église de Gien
-      (Loiret) à 15h.
+      Rejoignons-nous pour la célébration qui aura lieu en l'église
+      Sainte-Jeanne-d'Arc de Gien à 15h.
     </Bloc>
     <Bloc
       img="static/petit-valot-salle.jpg"
@@ -93,7 +90,8 @@ export default () => (
       time="13h"
       location="Le Petit Valot"
     >
-      Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de bain !
+      Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de
+      bain&nbsp;!
     </Bloc>
     {/* Comment s'y rendre */}
     <div className="align-center medium-blue py36">
@@ -101,30 +99,46 @@ export default () => (
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py12">
-        Vous serez nombreux à venir en voiture depuis Paris et ses environs.
-        Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
-        vous pouvez partager vos coordonnées sur{" "}
-        <a
-          className="color-blue link"
-          href="https://docs.google.com/spreadsheets/d/1xYlzqVCH16RgttLSRD5BR90mg7lzV3hQADQPSHvKcxw/edit?usp=sharing"
-        >
-          ce document
-        </a>
-        . Il y a aussi un{" "}
+        🚗 Vous serez nombreux à venir en voiture depuis Paris et ses environs.
+        <br />
+        <div className="pl24-ml">
+          Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
+          vous pouvez partager vos coordonnées sur{" "}
+          <a
+            className="color-blue link"
+            href="https://docs.google.com/spreadsheets/d/1xYlzqVCH16RgttLSRD5BR90mg7lzV3hQADQPSHvKcxw/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ce document.
+          </a>
+        </div>
+        <br />
+        🚈 Il y a aussi un{" "}
         <a
           className="link"
           href="https://www.oui.sncf/train/horaires/paris/gien"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           TER
         </a>{" "}
-        partant de Paris Bercy vers Gien.
+        partant à 09h09 de Paris Bercy vers Gien (le prochain à 14h11 fait
+        arriver pendant la cérémonie).
       </p>
       <p className="py12">
-        Le samedi soir, nous mettrons des taxis à votre disposition pour vous
+        🚴🏻‍♀️ Les plus chevronnés peuvent également venir en vélo.
+      </p>
+      <p className="py12">
+        🚕 Le samedi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
 
-      <img src="/static/map.png" className="w600 center mx-auto block" />
+      <img
+        src="/static/map.png"
+        style={{ width: 500, maxWidth: "80%" }}
+        className="center mx-auto block pt24"
+      />
     </div>
 
     {/* Logement */}
@@ -133,11 +147,17 @@ export default () => (
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p>
-        Voici une liste de quelques hôtels aux alentours du lieu de réception:
+        Voici une liste de quelques hôtels aux alentours du lieu de
+        réception&nbsp;:
       </p>
       <ul className="txt-ul py12">
         <li className="txt-li">
-          <a className="color-blue link" href="https://hoteldurivage.com/">
+          <a
+            className="color-blue link"
+            href="https://hoteldurivage.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Hôtel du Rivage
           </a>
           , hôtel mignon en bord de Loire
@@ -146,13 +166,20 @@ export default () => (
           <a
             className="color-blue link"
             href="https://www.domainedesroches-briare.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Domaine des Roches
           </a>
           , hôtel de charme avec piscine à 20 minutes de la salle
         </li>
         <li className="txt-li">
-          <a className="color-blue link" href="http://www.sanotel-gien.fr/">
+          <a
+            className="color-blue link"
+            href="http://www.sanotel-gien.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Sanotel
           </a>
           , l'option la plus proche, deux étoiles
@@ -161,6 +188,8 @@ export default () => (
           <a
             className="color-blue link"
             href="https://all.accor.com/hotel/9344/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Ibis Gien
           </a>
@@ -169,16 +198,16 @@ export default () => (
       </ul>
       <p>
         Le Petit Valot n'autorise malheureusement pas les tentes. Contactez-nous
-        si vous voulez nos conseils pour choisir un hébergement !
+        si vous voulez nos conseils pour choisir un hébergement&nbsp;!
       </p>
     </div>
 
     {/* Logement */}
-    <div className="align-center medium-blue py36">
+    <div className="align-center medium-blue pt60 pb36">
       <h1 className="big inline-block">Que faire dans la région ?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
-      <p className="py12">
+      <p className="pb12">
         <strong>Les bords de Loire</strong> à Gien sont très agréables en été.
         Les alentours du château offrent une belle vue sur le fleuve. Si vous
         avez un peu de temps, la ville est à moins d'une heure en voiture de{" "}
@@ -187,7 +216,7 @@ export default () => (
       <p className="py12">
         Il y aurait des amateurs de ponts parmi nos invités, qui seront étonnés
         d'apprendre qu'on trouve à <strong>Briare</strong> le plus long
-        pont-canal métallique du monde !
+        pont-canal métallique du monde&nbsp;!
       </p>
       <img
         className="h240 center mx-auto block "
@@ -201,62 +230,81 @@ export default () => (
     </div>
 
     {/* QA */}
-    <div className="align-center medium-blue py36">
-      <h1 className="big inline-block">D'autres questions ?</h1>
+    <div className="align-center medium-blue pt60 pb36">
+      <h1 className="big inline-block">D'autres questions&nbsp;?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="txt-bold pb12">
-        Y aura-t-il des babysitters pour les enfants ?
+        Y aura-t-il des babysitters pour les enfants&nbsp;?
       </p>
       <p className="pb36">
         Nous prévoyons une salle et des babysitters pour les enfants.
-        Prévenez-nous pour que nous puissions prévoir combien ils seront !
+        Prévenez-nous pour que nous puissions prévoir combien ils seront&nbsp;!
       </p>
 
       <p className="txt-bold pb12">
-        Quand vous dire que nous serons présents ?
+        Quand vous dire que nous serons présents&nbsp;?
       </p>
       <p className="pb36">
-        Vous serez des nôtres ? Bonne nouvelle ! Votre réponse est souhaitée
-        avant le 20 avril 2020.
+        Vous serez des nôtres&nbsp;? Bonne nouvelle&nbsp;! Votre réponse est
+        souhaitée avant le 20 avril 2020.
       </p>
-      <p className="txt-bold pb12">Comment vous contacter ?</p>
+      <p className="txt-bold pb12">Comment vous contacter&nbsp;?</p>
       <p className="pb36">
         Écrivez-nous des mots doux ;)
         <ul className="txt-ul py12">
           <li className="txt-li">
-            <strong>S</strong>: 0768762623, sarah@bensarah.fr
+            <strong>S</strong> : 0768762623, sarah@bensarah.fr
           </li>
           <li className="txt-li">
-            <strong>B</strong>: 0767230974, ben@bensarah.fr
+            <strong>B</strong> : 0767230974, ben@bensarah.fr
           </li>
         </ul>
       </p>
     </div>
 
     {/* Liste */}
-    <div className="align-center medium-blue py36">
+    <div className="align-center medium-blue pt36 pb60">
       <h1 className="big inline-block">La liste</h1>
     </div>
-    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
-      <p className="py36">
-        Votre présence seule nous comble, mais si vous avez envie de participer
-        à notre voyage de noces, nous aurons bientôt un lien vers notre
-        cagnotte.
-      </p>
-    </div>
+
+    <Bloc
+      img="static/tian-shan.jpg"
+      mapsLink="https://goo.gl/maps/gELoca5hoDPPXf9M6"
+      title="Voyage de Noces"
+      time=""
+      location="Asie Centrale"
+    >
+      Si vous voulez participer à notre voyage de noces, voici&nbsp;
+      <a
+        className="color-blue link"
+        href="https://paypal.me/pools/c/8nltiMrrDm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        un lien vers une cagnotte
+      </a>
+      . <br />
+      Nous aimerions aller faire de la randonnée dans le Tian Shan, en Asie
+      Centrale 🏕.
+    </Bloc>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
       <div className="align-center medium-blue pt36 pb60">
         <div>
-          <a
-            className="link txt-xl"
-            href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW1saXE4aGhyZ29ucnY2cHVmYmUzcGRpMW4gZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            À vos agendas !
-          </a>
+          <h1 className="big inline-block">À vos agendas</h1>
+
+          <div className="pt36">
+            <a
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDJwZWM0MW5lc3Y4YTZzaGYxYXJxdDFxanUgZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="pointer btn btn--stroke round">
+                ＋ Ajouter l'événement à mon calendrier
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <img
@@ -265,10 +313,18 @@ export default () => (
         alt="Oui on se marie pour la deuxième fois, et alors ?"
       />
     </div>
-    <a className="align-center" href="mailto:nous@bensarah.fr">
-      ✉️ Contact
-    </a>
     {/* Margin at the bottom */}
     <div className="h36" />
+    <div className="relative">
+      <div className="absolute bottom align-center w-full my36">
+        <div className="mb12">
+          <a className="align-center" href="mailto:nous@bensarah.fr">
+            ✉️ Contact
+          </a>
+        </div>
+        <span className="txt-m">Made with love in confinement · © 2020</span>
+      </div>
+      <img src="/static/footer.png" className="w-full mb60 mb0-ml" />
+    </div>
   </Page>
 );
