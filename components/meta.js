@@ -11,7 +11,7 @@ class Meta extends Component {
         />
         <meta name="theme-color" content="#081926" />
         <meta name="description" content="Notre site de mariage" />
-        <title>Sarah & Benjamin</title>
+        <title>Sarah et Benjamin</title>
 
         <meta property="og:site_name" content="Sarah & Benjamin" />
         <meta property="og:locale" content="fr_FR" />

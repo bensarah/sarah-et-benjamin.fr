@@ -23,19 +23,19 @@ export default () => (
       {/* white Left space only for large screens */}
       <div
         style={{
-          background: "url(/static/frame-bottom.png) no-repeat bottom center",
+          background: "url(/static/frame.png) no-repeat bottom center",
           backgroundSize: "contain"
         }}
         className="relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <div
           style={{
-            background: "url(/static/frame-top.png) no-repeat top center",
+            background: "url(/static/frame-top2.png) no-repeat top center",
             backgroundSize: "contain"
           }}
           className="absolute w-full h-full top-0"
         />
-        <h1>Sarah & Benjamin</h1>
+        <h1>Sarah et Benjamin</h1>
         <span className="txt-h2 ml24-ml font-weight200 inline-block">
           20 juin 2020
         </span>
@@ -93,7 +93,8 @@ export default () => (
       time="13h"
       location="Le Petit Valot"
     >
-      Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de bain !
+      Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de
+      bain&nbsp;!
     </Bloc>
     {/* Comment s'y rendre */}
     <div className="align-center medium-blue py36">
@@ -133,7 +134,8 @@ export default () => (
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p>
-        Voici une liste de quelques hôtels aux alentours du lieu de réception:
+        Voici une liste de quelques hôtels aux alentours du lieu de
+        réception&nbsp;:
       </p>
       <ul className="txt-ul py12">
         <li className="txt-li">
@@ -169,7 +171,7 @@ export default () => (
       </ul>
       <p>
         Le Petit Valot n'autorise malheureusement pas les tentes. Contactez-nous
-        si vous voulez nos conseils pour choisir un hébergement !
+        si vous voulez nos conseils pour choisir un hébergement&nbsp;!
       </p>
     </div>
 
@@ -187,7 +189,7 @@ export default () => (
       <p className="py12">
         Il y aurait des amateurs de ponts parmi nos invités, qui seront étonnés
         d'apprendre qu'on trouve à <strong>Briare</strong> le plus long
-        pont-canal métallique du monde !
+        pont-canal métallique du monde&nbsp;!
       </p>
       <img
         className="h240 center mx-auto block "
@@ -202,33 +204,33 @@ export default () => (
 
     {/* QA */}
     <div className="align-center medium-blue py36">
-      <h1 className="big inline-block">D'autres questions ?</h1>
+      <h1 className="big inline-block">D'autres questions&nbsp;?</h1>
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="txt-bold pb12">
-        Y aura-t-il des babysitters pour les enfants ?
+        Y aura-t-il des babysitters pour les enfants&nbsp;?
       </p>
       <p className="pb36">
         Nous prévoyons une salle et des babysitters pour les enfants.
-        Prévenez-nous pour que nous puissions prévoir combien ils seront !
+        Prévenez-nous pour que nous puissions prévoir combien ils seront&nbsp;!
       </p>
 
       <p className="txt-bold pb12">
-        Quand vous dire que nous serons présents ?
+        Quand vous dire que nous serons présents&nbsp;?
       </p>
       <p className="pb36">
-        Vous serez des nôtres ? Bonne nouvelle ! Votre réponse est souhaitée
-        avant le 20 avril 2020.
+        Vous serez des nôtres&nbsp;? Bonne nouvelle&nbsp;! Votre réponse est
+        souhaitée avant le 20 avril 2020.
       </p>
-      <p className="txt-bold pb12">Comment vous contacter ?</p>
+      <p className="txt-bold pb12">Comment vous contacter&nbsp;?</p>
       <p className="pb36">
         Écrivez-nous des mots doux ;)
         <ul className="txt-ul py12">
           <li className="txt-li">
-            <strong>S</strong>: 0768762623, sarah@bensarah.fr
+            <strong>S</strong> : 0768762623, sarah@bensarah.fr
           </li>
           <li className="txt-li">
-            <strong>B</strong>: 0767230974, ben@bensarah.fr
+            <strong>B</strong> : 0767230974, ben@bensarah.fr
           </li>
         </ul>
       </p>
@@ -249,14 +251,19 @@ export default () => (
     <div className="flex-child--grow py36">
       <div className="align-center medium-blue pt36 pb60">
         <div>
-          <a
-            className="link txt-xl"
-            href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW1saXE4aGhyZ29ucnY2cHVmYmUzcGRpMW4gZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            À vos agendas !
-          </a>
+          <h1 className="big inline-block">À vos agendas</h1>
+
+          <div>
+            <a
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDJwZWM0MW5lc3Y4YTZzaGYxYXJxdDFxanUgZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn--stroke round">
+                ＋ Ajouter l'événement à mon agenda
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <img
@@ -270,5 +277,9 @@ export default () => (
     </a>
     {/* Margin at the bottom */}
     <div className="h36" />
+    <div className="relative">
+      <div className="absolute bottom align-center w-full mx36 my36">test</div>
+      <img src="/static/footer.png" className="w-full" />
+    </div>
   </Page>
 );
