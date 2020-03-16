@@ -36,9 +36,7 @@ export default () => (
           className="absolute w-full h-full top-0"
         />
         <h1>Sarah et Benjamin</h1>
-        <span className="txt-h2 ml24-ml font-weight200 inline-block">
-          20 juin 2020
-        </span>
+        <p className="pt24 txt-h2 font-weight300 inline-block">20 juin 2020</p>
       </div>
     </div>
     {/* Intro */}
@@ -53,8 +51,8 @@ export default () => (
         </p>
         <p className="pb12">
           Rendez-vous pour le solstice à{" "}
-          <span className="dancing-script dark-blue txt-h3">Gien</span>, dans le
-          Loiret . Hâte de vous y retrouver&nbsp;!
+          <span className="txt-bold dark-blue">Gien</span>, dans le Loiret. Hâte
+          de vous y retrouver 😘
         </p>
       </div>
       <img className="right w120" src="/static/loiret.png"></img>
@@ -293,13 +291,13 @@ export default () => (
         <div>
           <h1 className="big inline-block">À vos agendas</h1>
 
-          <div>
+          <div className="pt36">
             <a
               href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDJwZWM0MW5lc3Y4YTZzaGYxYXJxdDFxanUgZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn--stroke round">
+              <button className="pointer btn btn--stroke round">
                 ＋ Ajouter l'événement à mon calendrier
               </button>
             </a>
@@ -312,14 +310,18 @@ export default () => (
         alt="Oui on se marie pour la deuxième fois, et alors ?"
       />
     </div>
-    <a className="align-center" href="mailto:nous@bensarah.fr">
-      ✉️ Contact
-    </a>
     {/* Margin at the bottom */}
     <div className="h36" />
     <div className="relative">
-      <div className="absolute bottom align-center w-full mx36 my36">test</div>
-      <img src="/static/footer.png" className="w-full" />
+      <div className="absolute bottom align-center w-full my36">
+        <div>
+          <a className="align-center" href="mailto:nous@bensarah.fr">
+            ✉️ Contact
+          </a>
+        </div>
+        Made with love in confinement · © 2020
+      </div>
+      <img src="/static/footer.png" className="w-full mb60 mb0-ml" />
     </div>
   </Page>
 );

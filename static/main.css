@@ -1,6 +1,6 @@
 body {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Intro", sans-serif;
+  font-size: 18px;
 }
 
 /* Titles */
@@ -70,4 +70,21 @@ h2 {
 
 .dancing-script {
   font-family: "Dancing Script", sans-serif;
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url("/static/fonts/Intro\ Bold\ Regular.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url("/static/fonts/Intro\ Thin\ Regular.otf");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url("/static/fonts/Intro\ Book\ Regular.otf");
 }
