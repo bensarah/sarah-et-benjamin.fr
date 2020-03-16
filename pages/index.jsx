@@ -102,18 +102,22 @@ export default () => (
     </div>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py12">
-        Vous serez nombreux à venir en voiture depuis Paris et ses environs.
-        Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
-        vous pouvez partager vos coordonnées sur{" "}
-        <a
-          className="color-blue link"
-          href="https://docs.google.com/spreadsheets/d/1xYlzqVCH16RgttLSRD5BR90mg7lzV3hQADQPSHvKcxw/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ce document
-        </a>
-        . Il y a aussi un{" "}
+        🚗 Vous serez nombreux à venir en voiture depuis Paris et ses environs.
+        <br />
+        <div className="pl24-ml">
+          Pour ceux qui ont des places en plus ou qui cherchent un covoiturage,
+          vous pouvez partager vos coordonnées sur{" "}
+          <a
+            className="color-blue link"
+            href="https://docs.google.com/spreadsheets/d/1xYlzqVCH16RgttLSRD5BR90mg7lzV3hQADQPSHvKcxw/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ce document.
+          </a>
+        </div>
+        <br />
+        🚈 Il y a aussi un{" "}
         <a
           className="link"
           href="https://www.oui.sncf/train/horaires/paris/gien"
@@ -126,7 +130,10 @@ export default () => (
         arriver pendant la cérémonie).
       </p>
       <p className="py12">
-        Le samedi soir, nous mettrons des taxis à votre disposition pour vous
+        🚴🏻‍♀️ Les plus chevronnés peuvent également venir en vélo
+      </p>
+      <p className="py12">
+        🚕 Le samedi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
 
@@ -256,30 +263,30 @@ export default () => (
     </div>
 
     {/* Liste */}
-    <div className="align-center medium-blue py36">
+    <div className="align-center medium-blue pt36 pb60">
       <h1 className="big inline-block">La liste</h1>
     </div>
-    <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
-      <p className="py36">
-        Votre présence seule nous comble, mais si vous voulez participer à notre
-        voyage de noces, voici&nbsp;
-        <a
-          className="color-blue link"
-          href="https://paypal.me/pools/c/8nltiMrrDm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          un lien vers une cagnotte Paypal
-        </a>
-        . Nous aimerions aller faire de la randonnée dans le Tian Shan, en Asie
-        Centrale.
-      </p>
-      <img
-        className="wmax360 block mx-auto"
-        src="static/tian-shan.jpg"
-        alt="Voyage de noces en Asie Centrale, si on a le droit de voyager 🤞"
-      />
-    </div>
+
+    <Bloc
+      img="static/tian-shan.jpg"
+      mapsLink="https://goo.gl/maps/gELoca5hoDPPXf9M6"
+      title="Voyage de Noces"
+      time=""
+      location="Asie Centrale"
+    >
+      Si vous voulez participer à notre voyage de noces, voici&nbsp;
+      <a
+        className="color-blue link"
+        href="https://paypal.me/pools/c/8nltiMrrDm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        un lien vers une cagnotte
+      </a>
+      . <br />
+      Nous aimerions aller faire de la randonnée dans le Tian Shan, en Asie
+      Centrale 🏕.
+    </Bloc>
     {/* Clin d'oil de fin */}
     <div className="flex-child--grow py36">
       <div className="align-center medium-blue pt36 pb60">
@@ -293,7 +300,7 @@ export default () => (
               rel="noopener noreferrer"
             >
               <button className="btn btn--stroke round">
-                ＋ Ajouter l'événement à mon agenda
+                ＋ Ajouter l'événement à mon calendrier
               </button>
             </a>
           </div>
