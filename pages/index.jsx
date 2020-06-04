@@ -23,19 +23,19 @@ export default () => (
       <div
         style={{
           background: "url(/static/frame.png) no-repeat bottom center",
-          backgroundSize: "contain"
+          backgroundSize: "contain",
         }}
         className="my36 my0-ml relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <div
           style={{
             background: "url(/static/frame-top2.png) no-repeat top center",
-            backgroundSize: "contain"
+            backgroundSize: "contain",
           }}
           className="absolute w-full h-full top-0"
         />
         <h1 className="dancing-script txt-h1">Sarah et Benjamin</h1>
-        <p className="pt24 txt-h2 font-light inline-block">20 juin 2020</p>
+        <p className="pt24 txt-h2 font-light inline-block">24 octobre 2020</p>
       </div>
     </div>
     {/* Intro */}
@@ -49,9 +49,10 @@ export default () => (
           nous marier&nbsp;!
         </p>
         <p className="pb12">
-          Rendez-vous pour le solstice à{" "}
-          <span className="txt-bold dark-blue">Gien</span>, dans le Loiret. Hâte
-          de vous y retrouver 😘
+          Rendez-vous à <span className="txt-bold dark-blue">Gien</span>, dans
+          le Loiret, pour faire la fête toute la nuit (le changement d'heure
+          nous donne une heure de plus pour danser !). Hâte de vous y retrouver
+          😘
         </p>
       </div>
       <img className="right w120" src="/static/loiret.png"></img>
@@ -60,7 +61,9 @@ export default () => (
     <div className="align-center medium-blue pt60 pb60">
       <h1 className="big inline-block pt36">Le programme</h1>
       <br className="none-ml" />
-      <span className="big ml24-ml font-weight200 inline-block">20 juin</span>
+      <span className="big ml24-ml font-weight200 inline-block">
+        24 octobre
+      </span>
     </div>
     <Bloc
       img="static/gien.jpg"
@@ -69,8 +72,8 @@ export default () => (
       time="15h"
       location="Église de Gien"
     >
-      Rejoignons-nous pour la célébration qui aura lieu en l'église
-      Sainte-Jeanne-d'Arc de Gien à 15h.
+      Rejoignons-nous pour la célébration qui aura lieu aux alentours de Gien.
+      L'horaire et l'église sont à confirmer à cause du report.
     </Bloc>
     <Bloc
       img="static/petit-valot-salle.jpg"
