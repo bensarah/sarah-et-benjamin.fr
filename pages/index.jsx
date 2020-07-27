@@ -281,7 +281,7 @@ export default () => (
       Si vous voulez participer à notre voyage de noces, voici&nbsp;
       <a
         className="color-blue link"
-        href="https://paypal.me/pools/c/8nltiMrrDm"
+        href="https://paypal.me/pools/c/8rch9OpG2p"
         target="_blank"
         rel="noopener noreferrer"
       >
