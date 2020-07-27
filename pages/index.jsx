@@ -23,14 +23,14 @@ export default () => (
       <div
         style={{
           background: "url(/static/frame.png) no-repeat bottom center",
-          backgroundSize: "contain"
+          backgroundSize: "contain",
         }}
         className="my36 my0-ml relative dark-blue flex-child w360-ml hmin360 w-full px12 py12 flex-parent flex-parent--column flex-parent--center-main flex-parent--center-cross"
       >
         <div
           style={{
             background: "url(/static/frame-top2.png) no-repeat top center",
-            backgroundSize: "contain"
+            backgroundSize: "contain",
           }}
           className="absolute w-full h-full top-0"
         />
@@ -278,7 +278,7 @@ export default () => (
       Si vous voulez participer à notre voyage de noces, voici&nbsp;
       <a
         className="color-blue link"
-        href="https://paypal.me/pools/c/8nltiMrrDm"
+        href="https://paypal.me/pools/c/8rch9OpG2p"
         target="_blank"
         rel="noopener noreferrer"
       >
