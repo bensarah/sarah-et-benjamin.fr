@@ -5,6 +5,20 @@ import FramedImage from "../components/FramedImage.jsx";
 import Logo from "../components/Logo.jsx";
 import Bloc from "../components/Bloc.jsx";
 
+const Title = (props) => (
+  <div className="align-center medium-blue py36">
+    <h1 className="big inline-block">{props.children}</h1>
+  </div>
+);
+
+const Subtitle = (props) => (
+  <div className="align-center medium-blue pt36 pb24 mg-custom">
+    <h2 className="px24" style={{ color: "#325CC6" }}>
+      {props.children}
+    </h2>
+  </div>
+);
+
 export default () => (
   <Page>
     <div className="flex-parent flex-parent--row-reverse-ml flex-parent--row-ml flex-parent--column px36-ml py36-ml grid-ml">
@@ -40,7 +54,7 @@ export default () => (
     </div>
     {/* Intro */}
     <div
-      className="mx-auto px36 flex-parent flex-parent--space-between-main flex-parent--center-cross items-center"
+      className="mx-auto px36 flex-parent flex-parent--space-between-main flex-parent--center-cross items-center pt24 pb36"
       style={{ width: "min(64rem, 100%)" }}
     >
       <div style={{ height: "min-content" }}>
@@ -58,48 +72,51 @@ export default () => (
       <img className="right w120" src="/static/loiret.png"></img>
     </div>
     {/* Timeline */}
-    <div className="align-center medium-blue pt60 pb60">
-      <h1 className="big inline-block pt36">Le programme</h1>
-      <br className="none-ml" />
-      <span className="big ml24-ml font-weight200 inline-block">
-        24 octobre
-      </span>
-    </div>
-    <Bloc
-      img="static/gien.jpg"
-      mapsLink="https://goo.gl/maps/szGkRGerZ2dNLzsZ7"
-      title="Cérémonie"
-      time="15h"
-      location="Église de Gien"
-    >
-      Rejoignons-nous pour la célébration qui aura lieu aux alentours de Gien.
-      L'horaire et l'église sont à confirmer à cause du report.
-    </Bloc>
-    <Bloc
-      img="static/petit-valot-salle.jpg"
-      mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
-      title="Cocktail et dîner"
-      time="17h30"
-      location="Le Petit Valot"
-    >
-      Nous nous rendrons ensuite au Petit Valot pour le cocktail, dîner, et
-      danser jusqu'au petit matin.
-    </Bloc>
+    <div style={{ backgroundColor: "#f5fafd" }}>
+      <div className="align-center medium-blue pt60 pb60">
+        <h1 className="big inline-block">Le programme</h1>
+        <br className="none-ml" />
+        <span className="big ml24-ml font-weight200 inline-block">
+          24 octobre
+        </span>
+      </div>
+      <Bloc
+        img="static/gien.jpg"
+        mapsLink="https://goo.gl/maps/rAbkDYm4dAX2moD9A"
+        title="Cérémonie"
+        time="15h"
+        location="Église de Briare"
+      >
+        Rejoignons-nous pour la célébration qui aura lieu en l'Église de Briare.
+        <br />À cause du report, nous avons dû changer d'église.
+      </Bloc>
+      <Bloc
+        img="static/petit-valot-salle.jpg"
+        mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
+        title="Cocktail et dîner"
+        time="17h30"
+        location="Le Petit Valot"
+      >
+        Nous nous rendrons ensuite au Petit Valot pour le cocktail, dîner, et
+        danser jusqu'au petit matin.
+      </Bloc>
 
-    <Bloc
-      img="static/petit-valot.jpg"
-      mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
-      title="Brunch du dimanche"
-      time="13h"
-      location="Le Petit Valot"
-    >
-      Un brunch sera servi le lendemain, n'oubliez-pas vos maillots de
-      bain&nbsp;!
-    </Bloc>
-    {/* Comment s'y rendre */}
-    <div className="align-center medium-blue py36">
-      <h1 className="big inline-block">Comment s'y rendre ?</h1>
+      <Bloc
+        img="static/petit-valot.jpg"
+        mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
+        title="Brunch du dimanche"
+        time="13h"
+        location="Le Petit Valot"
+      >
+        Un brunch sera servi le lendemain.
+        <br />
+        Le temps permettra peut-être aux téméraires de profiter de la piscine,
+        prenez vos maillots.
+      </Bloc>
     </div>
+    {/* Comment s'y rendre */}
+    <Title>Questions pratiques</Title>
+    <Subtitle>Comment s'y rendre&nbsp;?</Subtitle>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="py12">
         🚗 Vous serez nombreux à venir en voiture depuis Paris et ses environs.
@@ -120,13 +137,13 @@ export default () => (
         🚈 Il y a aussi un{" "}
         <a
           className="link"
-          href="https://www.oui.sncf/train/horaires/paris/gien"
+          href="https://www.oui.sncf/train/horaires/paris/briare"
           target="_blank"
           rel="noopener noreferrer"
         >
           TER
         </a>{" "}
-        partant à 09h09 de Paris Bercy vers Gien (le prochain à 14h11 fait
+        partant à 09h09 de Paris Bercy vers Briare (le prochain à 14h11 fait
         arriver pendant la cérémonie).
       </p>
       <p className="py12">
@@ -139,15 +156,13 @@ export default () => (
 
       <img
         src="/static/map.png"
-        style={{ width: 500, maxWidth: "80%" }}
+        style={{ width: 750, maxWidth: "80%" }}
         className="center mx-auto block pt24"
       />
     </div>
 
     {/* Logement */}
-    <div className="align-center medium-blue py36">
-      <h1 className="big inline-block">Où dormir ?</h1>
-    </div>
+    <Subtitle>Où dormir&nbsp;?</Subtitle>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p>
         Voici une liste de quelques hôtels aux alentours du lieu de
@@ -205,10 +220,8 @@ export default () => (
       </p>
     </div>
 
-    {/* Logement */}
-    <div className="align-center medium-blue pt60 pb36">
-      <h1 className="big inline-block">Que faire dans la région ?</h1>
-    </div>
+    {/* Activities */}
+    <Subtitle>Que faire dans la région&nbsp;?</Subtitle>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="pb12">
         <strong>Les bords de Loire</strong> à Gien sont très agréables en été.
@@ -233,9 +246,7 @@ export default () => (
     </div>
 
     {/* QA */}
-    <div className="align-center medium-blue pt60 pb36">
-      <h1 className="big inline-block">D'autres questions&nbsp;?</h1>
-    </div>
+    <Subtitle>Autres questions</Subtitle>
     <div className="mx-auto px36" style={{ width: "min(64rem, 90%)" }}>
       <p className="txt-bold pb12">
         Y aura-t-il des babysitters pour les enfants&nbsp;?
@@ -250,7 +261,7 @@ export default () => (
       </p>
       <p className="pb36">
         Vous serez des nôtres&nbsp;? Bonne nouvelle&nbsp;! Votre réponse est
-        souhaitée avant le 20 avril 2020.
+        souhaitée avant le 20 août 2020.
       </p>
       <p className="txt-bold pb12">Comment vous contacter&nbsp;?</p>
       <p className="pb36">
@@ -267,31 +278,33 @@ export default () => (
     </div>
 
     {/* Liste */}
-    <div className="align-center medium-blue pt36 pb60">
-      <h1 className="big inline-block">La liste</h1>
-    </div>
+    <div style={{ backgroundColor: "#f5fafd" }}>
+      <div className="align-center medium-blue pt36 pb60">
+        <h1 className="big inline-block">La liste</h1>
+      </div>
 
-    <Bloc
-      img="static/tian-shan.jpg"
-      mapsLink="https://goo.gl/maps/gELoca5hoDPPXf9M6"
-      title="Voyage de Noces"
-      time=""
-      location="Asie Centrale"
-    >
-      Si vous voulez participer à notre voyage de noces, voici&nbsp;
-      <a
-        className="color-blue link"
-        href="https://paypal.me/pools/c/8rch9OpG2p"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Bloc
+        img="static/tian-shan.jpg"
+        mapsLink="https://goo.gl/maps/gELoca5hoDPPXf9M6"
+        title="Voyage de Noces"
+        time=""
+        location="Asie Centrale"
       >
-        un lien vers une cagnotte
-      </a>
-      . <br />
-      Nous aimerions aller faire de la randonnée dans le Tian Shan, en Asie
-      Centrale 🏕.
-    </Bloc>
-    {/* Clin d'oil de fin */}
+        Si vous voulez participer à notre voyage de noces, voici&nbsp;
+        <a
+          className="color-blue link"
+          href="https://paypal.me/pools/c/8rch9OpG2p"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          un lien vers une cagnotte
+        </a>
+        . <br />
+        Si cela est possible, nous aimerions aller faire de la randonnée dans le
+        Tian Shan, en Asie Centrale 🏕.
+      </Bloc>
+    </div>
+    {/* Clin d'œil de fin */}
     <div className="flex-child--grow py36">
       <div className="align-center medium-blue pt36 pb60">
         <div>
