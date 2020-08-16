@@ -81,7 +81,7 @@ export default () => (
         </span>
       </div>
       <Bloc
-        img="static/gien.jpg"
+        img="static/briare.jpg"
         mapsLink="https://goo.gl/maps/rAbkDYm4dAX2moD9A"
         title="Cérémonie"
         time="15h"
