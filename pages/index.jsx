@@ -189,7 +189,8 @@ export default () => (
           >
             Domaine des Roches
           </a>
-          , hôtel de charme avec piscine à 20 minutes de la salle
+          , hôtel de charme avec piscine à 20 minutes de la salle et situé
+          proche de l'Église.
         </li>
         <li className="txt-li">
           <a
