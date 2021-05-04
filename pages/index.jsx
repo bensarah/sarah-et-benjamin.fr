@@ -49,7 +49,7 @@ export default () => (
           className="absolute w-full h-full top-0"
         />
         <h1 className="dancing-script txt-h1">Sarah et Benjamin</h1>
-        <p className="pt24 txt-h2 font-light inline-block">24 octobre 2020</p>
+        <p className="pt24 txt-h2 font-light inline-block">14 juillet 2021</p>
       </div>
     </div>
     {/* Intro */}
@@ -59,13 +59,10 @@ export default () => (
     >
       <div style={{ height: "min-content" }}>
         <p className="pb12">
-          Après bientôt 7 ans et une trentaine de sommets, nous avons décidé de
-          nous marier&nbsp;!
+          Après bientôt 7 ans, 2 reports et une trentaine de sommets, on va se marier&nbsp;! 🤞
         </p>
         <p className="pb12">
-          Rendez-vous à <span className="txt-bold dark-blue">Gien</span>, dans
-          le Loiret, pour faire la fête toute la nuit (le changement d'heure
-          nous donne une heure de plus pour danser !). Hâte de vous y retrouver
+          Rendez-vous pour la messe à <span className="txt-bold dark-blue">Briare</span> proche de Gien dans le Loiret, pour faire la fête toute la nuit. Hâte de vous y retrouver
           😘
         </p>
       </div>
@@ -77,18 +74,17 @@ export default () => (
         <h1 className="big inline-block">Le programme</h1>
         <br className="none-ml" />
         <span className="big ml24-ml font-weight200 inline-block">
-          24 octobre
+          14 juillet
         </span>
       </div>
       <Bloc
         img="static/briare.jpg"
         mapsLink="https://goo.gl/maps/rAbkDYm4dAX2moD9A"
         title="Cérémonie"
-        time="15h"
+        time="14h"
         location="Église de Briare"
       >
-        Rejoignons-nous pour la célébration qui aura lieu en l'Église de Briare.
-        <br />À cause du report, nous avons dû changer d'église.
+        Rejoignons-nous pour la célébration qui aura lieu en l'église de Briare.
       </Bloc>
       <Bloc
         img="static/petit-valot-salle.jpg"
@@ -104,14 +100,13 @@ export default () => (
       <Bloc
         img="static/petit-valot.jpg"
         mapsLink="https://goo.gl/maps/Hv56pXD4TbgwHC1RA"
-        title="Brunch du dimanche"
+        title="Brunch du jeudi"
         time="13h"
         location="Le Petit Valot"
       >
-        Un brunch sera servi le lendemain.
+        Un brunch sera servi le lendemain. Pas mal pour un jeudi.
         <br />
-        Le temps permettra peut-être aux téméraires de profiter de la piscine,
-        prenez vos maillots.
+        Prenez vos maillots pour profiter de la piscine !
       </Bloc>
     </div>
     {/* Comment s'y rendre */}
@@ -143,14 +138,14 @@ export default () => (
         >
           TER
         </a>{" "}
-        partant à 09h09 de Paris Bercy vers Briare (le prochain à 14h11 fait
-        arriver pendant la cérémonie).
+        partant à 09h11 de Paris Bercy vers Briare (le prochain à 14h01 fait
+        arriver après la cérémonie).
       </p>
       <p className="py12">
         🚴🏻‍♀️ Les plus chevronnés peuvent également venir en vélo.
       </p>
       <p className="py12">
-        🚕 Le samedi soir, nous mettrons des taxis à votre disposition pour vous
+        🚕 Le mercredi soir, nous mettrons des taxis à votre disposition pour vous
         amener aux hôtels des alentours.
       </p>
 
@@ -262,7 +257,7 @@ export default () => (
       </p>
       <p className="pb36">
         Vous serez des nôtres&nbsp;? Bonne nouvelle&nbsp;! Votre réponse est
-        souhaitée avant le 20 août 2020.
+        souhaitée avant le 14 juin 2021.
       </p>
       <p className="txt-bold pb12">Comment vous contacter&nbsp;?</p>
       <p className="pb36">
@@ -313,7 +308,7 @@ export default () => (
 
           <div className="pt36">
             <a
-              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDJwZWM0MW5lc3Y4YTZzaGYxYXJxdDFxanUgZ2ZnNGhzMHQ1ZDVpb2FkZ29yczk1bnE4aWdAZw&tmsrc=gfg4hs0t5d5ioadgors95nq8ig%40group.calendar.google.com"
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MWEzOXU2bGRiNTQ0NTBjOTdsdWZlaXRwOWsga25idGg4c29jMGRhaGJmMHMxZGppcTJuODhAZw&tmsrc=knbth8soc0dahbf0s1djiq2n88%40group.calendar.google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -339,7 +334,7 @@ export default () => (
             ✉️ Contact
           </a>
         </div>
-        <span className="txt-m">Made with love in confinement · © 2020</span>
+        <span className="txt-m">Made with love in confinement · © 2021</span>
       </div>
       <img src="/static/footer.png" className="w-full mb60 mb0-ml" />
     </div>
