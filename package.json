@@ -20,7 +20,7 @@
   "homepage": "https://github.com/benjamintd/bensarah#readme",
   "dependencies": {
     "mapbox-gl": "^1.8.1",
-    "next": "^9.3.2",
+    "next": "^13.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
